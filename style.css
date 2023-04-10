@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #180123;
+}
+
+
+.container{
+    padding: 40px;
+    border-radius: 15px; 
+    border: 8px solid #180123;
+    box-shadow:  13px 13px 15px #0c0112,
+                -13px -13px 15px #240235,
+                inset 8px 8px 8px #0c0112,
+                inset -8px -8px 8px #240235;
+}
+
+.container> .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:25px;
+}
+
+.container > .page.signin,
+.container.signinpart > .page.signup{
+    display: none;
+}
+
+.container.signinpart > .page.signin{
+    display: flex;
+}
+
+.container> .page > h2{
+    color:#ffffff;
+    font-weight:600;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+}
+
+.container> .page > .inputBox{
+    position: relative;
+    width: 300px;
+}
+
+.container> .page > .inputBox > input{
+    padding : 12px 10px 12px 45px;
+    border: none;
+    width: 100%;
+    border: 1px solid #0000001a;
+    border-radius: 10px;
+    background-color: #180123;
+    box-shadow:  5px 5px 5px #0c0112,
+                -5px -5px 5px #240235;
+    color:#ffffff;
+    outline: none;
+    font-weight: 300;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.container> .page > .inputBox > span{
+    position: absolute;
+    left:0;
+    padding : 12px 10px 12px 45px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    color:#c862fb43;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    
+}
+
+.container> .page > .inputBox> input:valid ~ span,
+.container> .page > .inputBox> input:focus ~ span{
+    color:#c862fb;
+    border: 1px solid #c862fb;
+    background: #0c0112;
+    transform: translateX(25px) translateY(-7px);
+    font-size: 0.6em;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.container> .page > .inputBox> input:valid,
+.container> .page > .inputBox> input:focus {
+    border: 1px solid #c862fb;
+}
+
+.container> .page > .inputBox > i{
+    position: absolute;
+    left:15px;
+    top:15px;
+    width: 25px;
+    padding : 2px 0;
+    color:#c862fb;
+    border-right: 1px solid #c862fb;
+}
+
+.container> .page > .inputsub > .submit{
+    background-color: #c862fb;
+    color: #0c0112;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow:  10px 10px 10px #0c0112,
+                -10px -10px 10px #240235,
+                inset -5px -5px 5px #a958d5,
+                inset 5px 5px 5px #b883d4;
+    border-radius: 10px;
+    width: 250px;   
+
+}
+
+.container> .page > p{
+    color:#c862fb43;
+    font-size: 12px;
+    font-weight: 300;  
+}
+.container> .page > p > a{
+    color:#ffffff;
+    font-size: 12px;
+    font-weight: 300;  
+}
+
+
