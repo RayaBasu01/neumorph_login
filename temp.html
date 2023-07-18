@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <form id="create">
+        <label for="username_sign_up">Username:</label>
+        <input type="text" id="username_sign_up" name="username_sign_up">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const create = document.getElementById("create");
+        const username_sign_up = document.getElementById("username_sign_up");
+
+        create.addEventListener('submit',()=>{
+            console.log("hello")
+            if(username_sign_up.value=="")
+                alert('empty username not allowed')
+        });
+    </script>
+</body>
+</html>
